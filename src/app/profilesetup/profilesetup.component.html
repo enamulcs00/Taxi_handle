@@ -1,0 +1,196 @@
+<app-header>
+</app-header>
+<div class="body_wrapper cart_page">
+    <div class="dash_account">
+        <div class="container">
+            <div class="dash_account_inner">
+                <div class="heading">
+                    <h2>Let’s setup your dash account!</h2>
+                </div>
+                <div class="profile_img">
+                    <div class="grey_circle">
+                        <div class="green_circle">
+                            <figure *ngIf="image"><img [src]="image"></figure>
+                            <figure *ngIf="!image"><img [src]="imgurl + profileimg"></figure>
+                        </div>
+                    </div>
+                    <div class="profile_camera">
+                        <figure><img src="../../assets/images/camera.png"></figure>
+                        <input type="file" (change)="onChange($event,'')" id="file-input" class="upload_file">
+                    </div>
+
+                    <h5>Take a selfie!</h5>
+                </div>
+                <form [formGroup]="profileForm">
+                    <div class="personal_detail">
+                        <h4>Personal details</h4>
+                        <ul>
+                            <li>
+                                <div>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" (keypress)="number($event)" (keydown.space)="$event.preventDefault()" formControlName="firstname"  placeholder="First name" name="name">
+                                </mat-form-field>
+                            </div>
+                                <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('firstname', 'required')">
+                               First name is required!
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('firstname', 'maxlength')">
+                               Maxlength should be 8 character
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('firstname', 'minlength')">
+                               Minlength should be 3 character
+                            </mat-error>
+
+                            </li>
+                            <li>
+
+                                <div>
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="text" (keypress)="number($event)" (keydown.space)="$event.preventDefault()" formControlName="lastname" placeholder="Last name" name="name">
+                                    </mat-form-field>
+                                </div>
+                              
+                                <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('lastname', 'required')">
+                               Last name is required!
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('lastname', 'maxlength')">
+                               Maxlength should be 8 character
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('lastname', 'minlength')">
+                               Minlength should be 3 character
+                            </mat-error>
+                            </li>
+                            <li>
+                                <div>
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="text" (keydown.space)="$event.preventDefault()" formControlName="username" placeholder="Username" name="name">
+                                    </mat-form-field>
+                                </div>
+                                
+                                <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('username', 'required')">
+                               Username is required!
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('username', 'maxlength')">
+                               Maxlength should be 8 character
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('username', 'minlength')">
+                               Minlength should be 8 character
+                            </mat-error>
+                            </li>
+                            <li>
+                                <div>
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="text" (keydown.space)="$event.preventDefault()" formControlName="email" placeholder="Email Address" name="name">
+                                    </mat-form-field>
+                                </div>
+                                
+                                <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('email', 'required')">
+                               Email is required!
+                            </mat-error>
+                            <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('email', 'email')">
+                                Invalid email
+                            </mat-error>
+                            </li>
+                            <li>
+                                <mat-form-field class="flag" >
+                                    <mat-label>{{phonecode}}</mat-label>
+                                    <mat-select (selectionChange)="someMethod($event.value)">
+                                      <mat-option *ngFor="let code of countrycode" [value]="code.dial_code">
+                                        {{code.dial_code}}
+                                      </mat-option>
+                                    </mat-select>
+                                  </mat-form-field>
+                                <div>
+                                
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="tel" (keypress)="alphabate($event)" (keydown.space)="$event.preventDefault()" formControlName="phone" placeholder="Phone number" name="name">
+                                    </mat-form-field>
+                                </div>
+                               
+                                <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('phone', 'required')">
+                               Phone is required!
+                               </mat-error>
+                               <mat-error class="error"
+                               *ngIf="submitted && errorHandlingSignup('phone', 'maxlength') || errorHandlingSignup('phone', 'minlength')">
+                              Invalid phone!
+                              </mat-error>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="personal_detail">
+                        <h4>Address</h4>
+                        <ul>
+                            <!-- <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input matInput type="text" placeholder="Street Name" name="name">
+                                </mat-form-field>
+                            </li> -->
+                            <li>
+                                <div class="half">
+                                    <div>
+                                       
+                                            <mat-form-field [floatLabel]="'never'">
+                                                <input matInput   ngx-google-places-autocomplete #placesRef="ngx-places"
+                                                (onAddressChange)="AddressChange($event)" type="text" formControlName="address" (keydown.space)="$event.preventDefault()" placeholder="Location" name="name">
+                                            </mat-form-field>
+                                        
+                                        <mat-error class="error"
+                                        *ngIf="submitted && errorHandlingSignup('address', 'required')">
+                                       Address is required!
+                                    </mat-error>
+                                    </div>
+                                    <div>
+                                        <img src="../../assets/images/location.png">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <mat-form-field [floatLabel]="'never'">
+                                        <input matInput type="text" (keypress)="alphabate($event)" formControlName="zipcode" (keydown.space)="$event.preventDefault()" placeholder="Pincode/Zipcode(optional)" name="name">
+                                    </mat-form-field>
+                                </div>
+                                <mat-error class="error"
+                                *ngIf="submitted && errorHandlingSignup('zipcode', 'minlength') || errorHandlingSignup('zipcode','maxlength')">
+                               Invalid Zipcode!
+                            </mat-error>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="submit">
+                        <button (click)="submitProfile()">Submit</button>
+                    </div>
+                    <!-- <div class="personal_detail">
+                        <h4>Password</h4>
+                        <ul>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input type="text" placeholder="Password">
+                                </mat-form-field>
+                            </li>
+                            <li>
+                                <mat-form-field [floatLabel]="'never'">
+                                    <input type="text" placeholder="Re-Enter password" name="password">
+                                </mat-form-field>
+                            </li>
+
+                        </ul>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

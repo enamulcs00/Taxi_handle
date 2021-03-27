@@ -1,0 +1,56 @@
+<div class="body_wrapper tracking_page">
+    <app-header></app-header>
+    <section class="trcking_map_sec">
+        <div class="maps_sec">
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-direction [origin]="origin" [destination]="destination">
+                </agm-direction>
+            </agm-map>
+        </div>
+        <div class="tracking_order_info">
+            <div class="tracking_info_toptitle">
+                <h3>Tracking your order</h3>
+                <p>Your order will reach at your location in</p>
+                <span>20:01</span>
+            </div>
+            <div class="order_tracking_detail">
+                <ul>
+                    <li>
+                        <div class="tracking_bigbx tracking_circlue_active">
+                            <div class="tracking_medbx">
+
+                            </div>
+                        </div>
+                        <div class="traking_summeray">
+                            <p>In kitchen</p>
+                            <span>Your order is cooking.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tracking_bigbx ">
+                            <div class="tracking_medbx">
+
+                            </div>
+                        </div>
+                        <div class="traking_summeray">
+                            <p>On the way</p>
+                            <!-- <span>Your order is cooking.</span> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tracking_bigbx">
+                            <div class="tracking_medbx">
+
+                            </div>
+                        </div>
+                        <div class="traking_summeray">
+                            <p>Your order has been delivered</p>
+                            <!-- <span>Your order is cooking.</span> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <app-footer></app-footer>
+</div>

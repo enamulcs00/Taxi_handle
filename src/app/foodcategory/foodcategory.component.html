@@ -1,0 +1,868 @@
+<app-header></app-header>
+<div class="body_wrapper food_cate_page notification_top">
+    <div class="container">
+        <section class="food_side_list">
+            <div class="conta_iner">
+                <div class="food_sidebar_innerdiv">
+                    <div class="food_cate_sidebar">
+                        <div class="food_cate_subitem">
+                            <div class="form-group search_field">
+                                <input class="form-control" type="text" placeholder="Search Meals or Kitchens">
+                                <button type="submit"> <i class="fa fa-search"></i> </button>
+                            </div>
+                            <div class="Sort border_top">
+                                <a data-toggle="collapse" data-target="#sort">
+                              Sort by <i class="fa fa-angle-down fa-2x"></i>
+                              </a>
+                                <div id="sort" class="collapse">
+                                    <ul>
+                                        <li>
+                                            <mat-checkbox>Picked For You (Default) </mat-checkbox>
+                                        </li>
+                                        <li>
+                                            <mat-checkbox> Rating </mat-checkbox>
+                                        </li>
+                                        <li>
+                                            <mat-checkbox> Popularity </mat-checkbox>
+                                        </li>
+                                        <li>
+                                            <mat-checkbox> Distance </mat-checkbox>
+                                        </li>
+                                    </ul>
+                                    <div class="food_item_rateing">
+                                        <p>Food available between </p>
+                                        <!-- <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="1000" min="1" max="100000">
+                          </mat-slider> -->
+                                        <span>10:00 AM</span><span>09:00 PM</span>
+                                        <div class="multi-range-container">
+                                            <div class="multi-range">
+                                                <input class="range" type="range" min="0" max="10" value="0" step="0.1" id="lower">
+                                                <span id="range-color" class="range-color"></span>
+                                                <input class="range" type="range" min="0" max="10" value="10" step="0.1" id="upper">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="food_item_rateing">
+                                        <p>Price range (KES)</p>
+                                        <span>AUD 5</span><span>AUD 50</span>
+                                        <div class="multi-range-container">
+                                            <div class="multi-range">
+                                                <input class="range" type="range" min="0" max="10" value="0" step="0.1" id="lower">
+                                                <span id="range-color" class="range-color"></span>
+                                                <input class="range" type="range" min="0" max="10" value="10" step="0.1" id="upper">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="food_item_asiderating">
+                                        <p>Cuisine</p>
+                                        <mat-form-field appearance="fill">
+                                            <mat-label>Select Cuisine</mat-label>
+                                            <mat-select>
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                </mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="food_item_filters">
+                                        <button class="apply"> Apply Filter </button>
+                                        <button class="clr" mat-button>Clear Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food_cart_mrnuaside">
+                        <div class="food_item_cate">
+                            <h3 class="aside_title">Categories</h3>
+                            <ul>
+                                <li class="active">
+                                    <h3>Best-sellers</h3>
+                                    <p>42</p>
+                                </li>
+                                <li>
+                                    <h3>Best-sellers</h3>
+                                    <p>42</p>
+                                </li>
+                                <li>
+                                    <h3>Best-sellers</h3>
+                                    <p>42</p>
+                                </li>
+                                <li>
+                                    <h3>Best-sellers</h3>
+                                    <p>42</p>
+                                </li>
+                                <li>
+                                    <h3>Best-sellers</h3>
+                                    <p>42</p>
+                                </li>
+                                <li>
+                                    <h3>Best-sellers</h3>
+                                    <p>42</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="food_cate_box Kitchen_page_box">
+                    <div class="food_cartmenu_section">
+                        <div class="food_cart_menuitems">
+                            <div class="food_cart_menutabs">
+                                <mat-tab-group>
+                                    <mat-tab label="Daily Dishes">
+                                        <div class="Daily_dish">
+                                            <div class="main_menu_sec">
+                                                <div class="date_menu">
+                                                    <img src="assets/images/calender.png" alt="">
+                                                </div>
+
+                                                <ul class="kitchen_list Daily_dish_list">
+                                                    <li>
+                                                        <div class="kitchen_box">
+                                                            <div class="kitchen_img">
+                                                                <figure>
+                                                                    <img src="assets/images/kitchen_food.png" alt="">
+                                                                    <p class="order_time2"> Order by : 5:00 PM </p>
+                                                                    <span class="order_time"> Delivery Starts from $2.99 </span>
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                            </div>
+                                                            <div class="kitchen_content">
+                                                                <figure class="kitchen_logo">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                </figure>
+                                                                <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                                <h3>New Café House</h3>
+                                                                <p> <span class="detail">A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot....</span>
+                                                                    <span class="price"> $7.90 </span> </p>
+                                                                <ul class="kitchen_rating">
+                                                                    <li> <span> <i class="fa fa-star"></i> </span>
+                                                                        <p> 4.5 (1.2k) </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> <i class="fa fa-map-marker"></i>
+                                                                  </span>
+                                                                        <p> 800m </p>
+                                                                    </li>
+                                                                    <li> Flat 50% </li>
+                                                                    <!-- <li> Delivery at $2.99 </li> -->
+                                                                    <li class="theme_btn"> Add </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kitchen_box">
+                                                            <div class="kitchen_img">
+                                                                <figure>
+                                                                    <img src="assets/images/kitchen_food.png" alt="">
+                                                                    <p class="order_time2"> Order by : 5:00 PM </p>
+                                                                    <span class="order_time"> Free Delivery or Pickup </span>
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                            </div>
+                                                            <div class="kitchen_content">
+                                                                <figure class="kitchen_logo">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                </figure>
+                                                                <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                                <h3>New Café House</h3>
+                                                                <p> <span class="detail">A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot....</span>
+                                                                    <span class="price"> $7.90 </span> </p>
+                                                                <ul class="kitchen_rating">
+                                                                    <li> <span> <i class="fa fa-star"></i> </span>
+                                                                        <p> 4.5 (1.2k) </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> <i class="fa fa-map-marker"></i>
+                                                                </span>
+                                                                        <p> 800m </p>
+                                                                    </li>
+                                                                    <li> Flat 50% </li>
+                                                                    <!-- <li> Delivery at $2.99 </li> -->
+                                                                    <li class="theme_btn"> Add </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kitchen_box">
+                                                            <div class="kitchen_img">
+                                                                <figure>
+                                                                    <img src="assets/images/kitchen_food.png" alt="">
+                                                                    <p class="order_time2"> Order by : 5:00 PM </p>
+                                                                    <span class="order_time"> Free Delivery or Pickup </span>
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                            </div>
+                                                            <div class="kitchen_content">
+                                                                <figure class="kitchen_logo">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                </figure>
+                                                                <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                                <h3>New Café House</h3>
+                                                                <p> <span class="detail">A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot....</span>
+                                                                    <span class="price"> $7.90 </span> </p>
+                                                                <ul class="kitchen_rating">
+                                                                    <li> <span> <i class="fa fa-star"></i> </span>
+                                                                        <p> 4.5 (1.2k) </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> <i class="fa fa-map-marker"></i>
+                                                              </span>
+                                                                        <p> 800m </p>
+                                                                    </li>
+                                                                    <li> Flat 50% </li>
+                                                                    <!-- <li> Delivery at $2.99 </li> -->
+                                                                    <li class="theme_btn"> Add </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kitchen_box">
+                                                            <div class="kitchen_img">
+                                                                <figure>
+                                                                    <img src="assets/images/kitchen_food.png" alt="">
+                                                                    <p class="order_time2"> Order by : 5:00 PM </p>
+                                                                    <span class="order_time"> Delivery Starts from $2.99 </span>
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                            </div>
+                                                            <div class="kitchen_content">
+                                                                <figure class="kitchen_logo">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                </figure>
+                                                                <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                                <h3>New Café House</h3>
+                                                                <p> <span class="detail">A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot....</span>
+                                                                    <span class="price"> $7.90 </span> </p>
+                                                                <ul class="kitchen_rating">
+                                                                    <li> <span> <i class="fa fa-star"></i> </span>
+                                                                        <p> 4.5 (1.2k) </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> <i class="fa fa-map-marker"></i>
+                                                            </span>
+                                                                        <p> 800m </p>
+                                                                    </li>
+                                                                    <li> Flat 50% </li>
+                                                                    <!-- <li> Delivery at $2.99 </li> -->
+                                                                    <li class="theme_btn"> Add </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kitchen_box">
+                                                            <div class="kitchen_img">
+                                                                <figure>
+                                                                    <img src="assets/images/kitchen_food.png" alt="">
+                                                                    <p class="order_time2"> Order by : 5:00 PM </p>
+                                                                    <span class="order_time"> Free Delivery or Pickup </span>
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                            </div>
+                                                            <div class="kitchen_content">
+                                                                <figure class="kitchen_logo">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                </figure>
+                                                                <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                                <h3>New Café House</h3>
+                                                                <p> <span class="detail">A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot....</span>
+                                                                    <span class="price"> $7.90 </span> </p>
+                                                                <ul class="kitchen_rating">
+                                                                    <li> <span> <i class="fa fa-star"></i> </span>
+                                                                        <p> 4.5 (1.2k) </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> <i class="fa fa-map-marker"></i>
+                                                                        </span>
+                                                                        <p> 800m </p>
+                                                                    </li>
+                                                                    <li> Flat 50% </li>
+                                                                    <!-- <li> Delivery at $2.99 </li> -->
+                                                                    <li class="theme_btn"> Add </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="kitchen_box">
+                                                            <div class="kitchen_img">
+                                                                <figure>
+                                                                    <img src="assets/images/kitchen_food.png" alt="">
+                                                                    <!-- <span class="order_time"> Free Delivery or Pickup </span> -->
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                                <span class="overlay">Soldout</span>
+                                                            </div>
+                                                            <div class="kitchen_content">
+                                                                <figure class="kitchen_logo">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                </figure>
+                                                                <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                                <h3>New Café House</h3>
+                                                                <p> <span class="detail">A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot....</span>
+                                                                    <span class="price"> $7.90 </span> </p>
+                                                                <ul class="kitchen_rating">
+                                                                    <li> <span> <i class="fa fa-star"></i> </span>
+                                                                        <p> 4.5 (1.2k) </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> <i class="fa fa-map-marker"></i>
+                                                        </span>
+                                                                        <p> 800m </p>
+                                                                    </li>
+                                                                    <li> Flat 50% </li>
+                                                                    <!-- <li> Delivery at $2.99 </li> -->
+                                                                    <li class="theme_btn"> Add </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <!-- <ul>
+                                                    <li>
+                                                        <div class="Daily_dish_box">
+                                                            <div class="dish_detail">
+                                                                <figure>
+                                                                    <img src="assets/images/cat_img_1.png" alt="">
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                                <div class="content_box">
+                                                                    <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                                                                    </h3>
+                                                                    <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot.... </p>
+                                                                    <ul class="kitchen_rating">
+                                                                        <li> <span> <i class="fa fa-star"></i> </span>
+                                                                            <p> 4.5 (1.2k) </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span> <i class="fa fa-map-marker"></i>
+                                                                              </span>
+                                                                            <p> 800m </p>
+                                                                        </li>
+                                                                        <li> Flat 50% </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="content_box_2">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                    <p> $7.90 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="order_detail">
+                                                                <p> Order by : 5:00 PM </p>
+                                                                <span> Delivery Starts from $2.99 </span>
+                                                                <a class="theme_btn" type="button" data-toggle="modal" data-target="#myModal"> Add </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="Daily_dish_box">
+                                                            <div class="dish_detail">
+                                                                <figure>
+                                                                    <img src="assets/images/cat_img_1.png" alt="">
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                                <div class="content_box">
+                                                                    <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                                                                    </h3>
+                                                                    <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot.... </p>
+                                                                    <ul class="kitchen_rating">
+                                                                        <li> <span> <i class="fa fa-star"></i> </span>
+                                                                            <p> 4.5 (1.2k) </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span> <i class="fa fa-map-marker"></i>
+                                                                              </span>
+                                                                            <p> 800m </p>
+                                                                        </li>
+                                                                        <li> Flat 50% </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="content_box_2">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                    <p> $7.90 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="order_detail">
+                                                                <p> Order by : 5:00 PM </p>
+                                                                <span> Delivery Starts from $2.99 </span>
+                                                                <a class="theme_btn"> Add </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="Daily_dish_box">
+                                                            <div class="dish_detail">
+                                                                <figure>
+                                                                    <img src="assets/images/cat_img_1.png" alt="">
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                                <div class="content_box">
+                                                                    <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                                                                    </h3>
+                                                                    <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot.... </p>
+                                                                    <ul class="kitchen_rating">
+                                                                        <li> <span> <i class="fa fa-star"></i> </span>
+                                                                            <p> 4.5 (1.2k) </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span> <i class="fa fa-map-marker"></i>
+                                                                              </span>
+                                                                            <p> 800m </p>
+                                                                        </li>
+                                                                        <li> Flat 50% </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="content_box_2">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                    <p> $7.90 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="order_detail">
+                                                                <p> Order by : 5:00 PM </p>
+                                                                <span> Delivery Starts from $2.99 </span>
+                                                                <a class="theme_btn"> Add </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="Daily_dish_box">
+                                                            <div class="dish_detail">
+                                                                <figure>
+                                                                    <img src="assets/images/cat_img_1.png" alt="">
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                                <div class="content_box">
+                                                                    <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                                                                    </h3>
+                                                                    <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot.... </p>
+                                                                    <ul class="kitchen_rating">
+                                                                        <li> <span> <i class="fa fa-star"></i> </span>
+                                                                            <p> 4.5 (1.2k) </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span> <i class="fa fa-map-marker"></i>
+                                                                              </span>
+                                                                            <p> 800m </p>
+                                                                        </li>
+                                                                        <li> Flat 50% </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="content_box_2">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                    <p> $7.90 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="order_detail">
+                                                                <p> Order by : 5:00 PM </p>
+                                                                <span> Delivery Starts from $2.99 </span>
+                                                                <a class="theme_btn"> Add </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="Daily_dish_box">
+                                                            <div class="dish_detail">
+                                                                <figure>
+                                                                    <img class="img_overlay" src="assets/images/cat_img_1.png" alt="">
+                                                                    <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                                </figure>
+                                                                <div class="content_box">
+                                                                    <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                                                                    </h3>
+                                                                    <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot.... </p>
+                                                                    <ul class="kitchen_rating">
+                                                                        <li> <span> <i class="fa fa-star"></i> </span>
+                                                                            <p> 4.5 (1.2k) </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span> <i class="fa fa-map-marker"></i>
+                                                                              </span>
+                                                                            <p> 800m </p>
+                                                                        </li>
+                                                                        <li> Flat 50% </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="content_box_2">
+                                                                    <img src="assets/images/kitchen_logo.png" alt="">
+                                                                    <p> $7.90 </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="order_detail">
+                                                                <p> Sold out </p>
+                                                                <span> Delivery Starts from $2.99 </span>
+                                                                <a class="btn btn-light disabled"> Add </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul> -->
+                                            </div>
+                                            <!-- <div class="food_cart_mrnuaside">
+                                                <div class="food_order_bill">
+                                                    <div class="order_topsec">
+                                                        <h3 class="theme_color">Cart</h3>
+                                                    </div>
+                                                    <div class="order_location_field">
+                                                        <label>Your address</label>
+                                                        <div class="location_order">
+                                                            <mat-form-field [floatLabel]="'never'">
+                                                                <input matInput type="text" placeholder="9631 Semper Ave Astoria" name="name">
+                                                            </mat-form-field>
+                                                            <span>
+                                                                  <figure>
+                                                                      <img src="../../../assets/images/cartpage/map.png" alt="map">
+                                                                  </figure>
+                                                              </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order_bill_item">
+                                                        <ul>
+                                                            <li>
+                                                                <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Egg Spi...
+                                                                    <div class="orderadd_cart_box">
+                                                                        <a>-</a>
+                                                                        <p>01</p>
+                                                                        <a>+</a>
+                                                                    </div>
+                                                                </h3>
+                                                                <h5> Indian Cafe House </h5>
+                                                                <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot... </p>
+                                                                <h4> $7.90 </h4>
+                                                            </li>
+                                                            <li>
+                                                                <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Egg Spi...
+                                                                    <div class="orderadd_cart_box">
+                                                                        <a>-</a>
+                                                                        <p>01</p>
+                                                                        <a>+</a>
+                                                                    </div>
+                                                                </h3>
+                                                                <h5> Indian Cafe House </h5>
+                                                                <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot... </p>
+                                                                <h4> $7.90 </h4>
+                                                            </li>
+                                                            <li>
+                                                                <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Egg Spi...
+                                                                    <div class="orderadd_cart_box">
+                                                                        <a>-</a>
+                                                                        <p>01</p>
+                                                                        <a>+</a>
+                                                                    </div>
+                                                                </h3>
+                                                                <h5> Indian Cafe House </h5>
+                                                                <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot... </p>
+                                                                <h4> $7.90 </h4>
+                                                            </li>
+                                                            <li>
+                                                                <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Egg Spi...
+                                                                    <div class="orderadd_cart_box">
+                                                                        <a>-</a>
+                                                                        <p>01</p>
+                                                                        <a>+</a>
+                                                                    </div>
+                                                                </h3>
+                                                                <h5> Indian Cafe House </h5>
+                                                                <p> A Bucket full of fun for friends!! 3pcs Hot & Crispy, 3pcs Hot... </p>
+                                                                <h4> $7.90 </h4>
+                                                            </li>
+                                                            <button class="theme_btn" (click)="goTocart()">Proceed to checkout</button>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </mat-tab>
+                                    <mat-tab label="Kitchen">
+                                        <div class="main_menu_sec">
+                                            <div class="cat_list">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/cat_img_1.png" alt="">
+                                                            <p> Vegetarian </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/cat_img_2.png" alt="">
+                                                            <p> Non.Veg </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/cat_img_3.png" alt="">
+                                                            <p> Desserts </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/cat_img_4.png" alt="">
+                                                            <p> Seafood </p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="assets/images/cat_img_1.png" alt="">
+                                                            <p> Vegetarian </p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="heading">
+                                                <h3>Nearby Kitchens</h3>
+                                                <a href="#"> View All > </a>
+                                            </div>
+                                            <ul class="kitchen_list">
+                                                <li>
+                                                    <div class="kitchen_box">
+                                                        <div class="kitchen_img">
+                                                            <figure>
+                                                                <img src="assets/images/kitchen_food.png" alt="">
+                                                                <span class="order_time"> Delivery Starts from $2.99 </span>
+                                                                <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="kitchen_content">
+                                                            <figure class="kitchen_logo">
+                                                                <img src="assets/images/kitchen_logo.png" alt="">
+                                                            </figure>
+                                                            <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                            <h3>New Café House</h3>
+                                                            <ul class="food_type">
+                                                                <li> Italian </li>
+                                                                <li> Indian </li>
+                                                                <li> Chinese </li>
+                                                                <li> + 15 </li>
+                                                            </ul>
+                                                            <ul class="kitchen_rating">
+                                                                <li> <span> <i class="fa fa-star"></i> </span>
+                                                                    <p> 4.5 (1.2k) </p>
+                                                                </li>
+                                                                <li>
+                                                                    <span> <i class="fa fa-map-marker"></i>
+                                                                      </span>
+                                                                    <p> 800m </p>
+                                                                </li>
+                                                                <li> Flat 50% </li>
+                                                                <!-- <li> Delivery at $2.99 </li> -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="kitchen_box">
+                                                        <div class="kitchen_img">
+                                                            <figure>
+                                                                <img src="assets/images/kitchen_food.png" alt="">
+                                                                <span class="order_time"> Free Delivery or Pickup </span>
+                                                                <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="kitchen_content">
+                                                            <figure class="kitchen_logo">
+                                                                <img src="assets/images/kitchen_logo.png" alt="">
+                                                            </figure>
+                                                            <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                            <h3>New Café House</h3>
+                                                            <ul class="food_type">
+                                                                <li> Italian </li>
+                                                                <li> Indian </li>
+                                                                <li> Chinese </li>
+                                                                <li> + 15 </li>
+                                                            </ul>
+                                                            <ul class="kitchen_rating">
+                                                                <li> <span> <i class="fa fa-star"></i> </span>
+                                                                    <p> 4.5 (1.2k) </p>
+                                                                </li>
+                                                                <li>
+                                                                    <span> <i class="fa fa-map-marker"></i>
+                                                                      </span>
+                                                                    <p> 800m </p>
+                                                                </li>
+                                                                <li> Flat 50% </li>
+                                                                <!-- <li> Delivery at $2.99 </li> -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="heading">
+                                                <h3>Recommended Kitchens</h3>
+                                                <a href="#"> View All > </a>
+                                            </div>
+                                            <ul class="kitchen_list">
+                                                <li>
+                                                    <div class="kitchen_box">
+                                                        <div class="kitchen_img">
+                                                            <figure>
+                                                                <img src="assets/images/kitchen_food.png" alt="">
+                                                                <span class="order_time"> Delivery Starts from $2.99 </span>
+                                                                <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="kitchen_content">
+                                                            <figure class="kitchen_logo">
+                                                                <img src="assets/images/kitchen_logo.png" alt="">
+                                                            </figure>
+                                                            <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                            <h3>New Café House</h3>
+                                                            <ul class="food_type">
+                                                                <li> Italian </li>
+                                                                <li> Indian </li>
+                                                                <li> Chinese </li>
+                                                                <li> + 15 </li>
+                                                            </ul>
+                                                            <ul class="kitchen_rating">
+                                                                <li> <span> <i class="fa fa-star"></i> </span>
+                                                                    <p> 4.5 (1.2k) </p>
+                                                                </li>
+                                                                <li>
+                                                                    <span> <i class="fa fa-map-marker"></i>
+                                                                      </span>
+                                                                    <p> 800m </p>
+                                                                </li>
+                                                                <li> Flat 50% </li>
+                                                                <!-- <li> Delivery at $2.99 </li> -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="kitchen_box">
+                                                        <div class="kitchen_img">
+                                                            <figure>
+                                                                <img src="assets/images/kitchen_food.png" alt="">
+                                                                <span class="order_time"> Free Delivery or Pickup </span>
+                                                                <img class="fav_icon" src="assets/images/fav_icon.png" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="kitchen_content">
+                                                            <figure class="kitchen_logo">
+                                                                <img src="assets/images/kitchen_logo.png" alt="">
+                                                            </figure>
+                                                            <!-- <h5>Delivery Starts from $2.99</h5> -->
+                                                            <h3>New Café House</h3>
+                                                            <ul class="food_type">
+                                                                <li> Italian </li>
+                                                                <li> Indian </li>
+                                                                <li> Chinese </li>
+                                                                <li> + 15 </li>
+                                                            </ul>
+                                                            <ul class="kitchen_rating">
+                                                                <li> <span> <i class="fa fa-star"></i> </span>
+                                                                    <p> 4.5 (1.2k) </p>
+                                                                </li>
+                                                                <li>
+                                                                    <span> <i class="fa fa-map-marker"></i>
+                                                                      </span>
+                                                                    <p> 800m </p>
+                                                                </li>
+                                                                <li> Flat 50% </li>
+                                                                <!-- <li> Delivery at $2.99 </li> -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </mat-tab>
+                                </mat-tab-group>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="food_pageination">
+                          <nav aria-label="Page navigation example">
+                              <ul class="pagination">
+                                  <li class="page-item next_icon page_active"><a class="page-link">
+                                          <figure>
+                                              <img src="../../../assets/images/homepage/slider.png" alt="">
+                                          </figure>
+                                      </a></li>
+                                  <li class="page-item"><a class="page-link">1</a></li>
+                                  <li class="page-item"><a class="page-link">2</a></li>
+                                  <li class="page-item"><a class="page-link">3</a></li>
+                                  <li class="page-item next_icon"><a class="page-link">
+                                          <figure>
+                                              <img src="../../../assets/images/homepage/slider.png" alt="">
+                                          </figure>
+                                      </a></li>
+                              </ul>
+                          </nav>
+                      </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="modal Add_modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2> Add On </h2>
+                <div class="Daily_dish_box">
+                    <div class="dish_detail">
+                        <div class="content_box">
+                            <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                            </h3>
+                            <p> A Bucket full of fun for friends!! 3pcs Hot </p>
+                        </div>
+                        <div class="content_box_2">
+                            <p> $7.90 </p>
+                            <a class="theme_btn" type="button" data-toggle="modal" data-target="#myModal"> Add </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Daily_dish_box">
+                    <div class="dish_detail">
+                        <div class="content_box">
+                            <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                            </h3>
+                            <p> A Bucket full of fun for friends!! 3pcs Hot </p>
+                        </div>
+                        <div class="content_box_2">
+                            <p> $7.90 </p>
+                            <a class="theme_btn" type="button" data-toggle="modal" data-target="#myModal"> Add </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Daily_dish_box">
+                    <div class="dish_detail">
+                        <div class="content_box">
+                            <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                            </h3>
+                            <p> A Bucket full of fun for friends!! 3pcs Hot </p>
+                        </div>
+                        <div class="content_box_2">
+                            <p> $7.90 </p>
+                            <a class="theme_btn" type="button" data-toggle="modal" data-target="#myModal"> Add </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Daily_dish_box">
+                    <div class="dish_detail">
+                        <div class="content_box">
+                            <h3> <img class="veg_icon" src="assets/images/veg_icon.png" alt=""> Healthy Spinach Salad
+                            </h3>
+                            <p> A Bucket full of fun for friends!! 3pcs Hot </p>
+                        </div>
+                        <div class="content_box_2">
+                            <p> $7.90 </p>
+                            <a class="theme_btn" type="button" data-toggle="modal" data-target="#myModal"> Add </a>
+                        </div>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="Preferences form-group">
+                        <h4> Preferences </h4>
+                        <textarea class="form-control" width="100%" rows="5" placeholder="Allergies, Extra Spicy etc."></textarea>
+                    </div>
+                    <button type="submit" class="theme_btn btn_100">Done</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+ul.payment_list {display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+ul.payment_list li {border-bottom:1px solid #00000017;padding-bottom:9px;width:47%;margin-bottom:30px;}
+.payment_list h3 {color:#1A1824;line-height:30px;font-size:18px;font-weight:bold;}
+.payment_list h3 span {display:block;color:#1A1824;opacity:0.5;font-weight:normal;font-size:15px;}
+.payment_list button {background:none;border:none;color:#FF5A61;font-size:17px;font-weight:bold;}
+.card_detail {display:flex;justify-content:space-between;align-items:center;}
+ .list_inner {padding:12px 30px;}
+.payment_btn button {color:#FFFFFF;font-size:18px;background:#FF5A61;border:none;border-radius:6px;padding:11px 68px;margin-top:30px;}
+.payment_btn {width:100%;margin:auto;text-align:center;}
+.credit_payment h2 {font-size:29px;color:#1A1824;font-weight:600;text-align:center;line-height:40px;}
+.credit_payment h2 span {display:block;font-size:16px;font-weight:normal;}
+.credit_payment {padding:30px;}
+.visa_main {display:flex;justify-content:space-between;}
+.credit_payment li {border-bottom:1px solid #70707036;padding:13px 0;margin:7px 0;}
+li.question_mask h5 {background:#70707047;color:#fff;font-size:12px;padding:1px 4px;border-radius:50px;}
+li.question_mask {display:flex;justify-content:space-between;width:45%;align-items:center;}
+button.signin_btn {background:#FF5A61;margin-top:30px;font-family:SF Pro Text!important;letter-spacing:1px;border:none;width:100%;color:#fff;font-family:SF Pro Text;height:46px;font-size:18px;border-radius:7px;}
+.quse_left {width:80%;}
+form {margin-top:40px;}
+@media(max-width:1600px) {
+.credit_payment h2 {font-size:27px;}
+}
+@media(max-width:1500px) {
+.payment_list h3 {font-size:16px;}
+.payment_list button {font-size:16px;}
+li.question_maskh5 {font-size: 10px;}
+.credit_payment h2 {font-size:25px;line-height: 36px;}
+}

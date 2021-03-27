@@ -1,0 +1,62 @@
+<div mat-dialog-content>
+    <div class="credit_payment">
+        <div mat-dialog-actions>
+            <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>
+                <img src="../../assets/images/cross.png">
+            </button>
+        </div>
+        <h2>Add credit/Debit card<span>Enter your credit card details.</span></h2>
+        <form>
+            <ul>
+                <li>
+                    <mat-form-field>
+                        <input matInput placeholder="Sandeep Singh">
+                    </mat-form-field>
+                </li>
+                <li>
+                    <div class="visa_main">
+                        <div>
+                            <mat-form-field>
+                                <input matInput placeholder="4533 5555 6666 7777">
+                            </mat-form-field>
+                        </div>
+                        <div><img src="../../assets/images/visa.png"></div>
+                    </div>
+                    <!-- <mat-form-field>
+                        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field> -->
+                </li>
+                <div class="visa_main">
+                    <li>
+
+                        <mat-form-field>
+                            <input matInput placeholder="06 / 23">
+                        </mat-form-field>
+                        <!-- <mat-form-field>
+                        <input matInput placeholder="Amount" type="number" class="example-right-align">
+                        <span matPrefix>$&nbsp;</span>
+                        <span matSuffix>.00</span>
+                    </mat-form-field> -->
+
+                    </li>
+                    <li class="question_mask">
+
+                        <div class="quse_left">
+                            <mat-form-field>
+                                <input matInput type="text" placeholder="**2" name="name">
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <h5>?</h5>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+            <button class="signin_btn">Continue</button>
+        </form>
+    </div>
+</div>

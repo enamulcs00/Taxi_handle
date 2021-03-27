@@ -1,0 +1,73 @@
+<div class="body_wrapper notification_top">
+    <app-header></app-header>
+    <div class="contact_main all_sec_my">
+        <div class="conta_iner">
+            <div class="contact_inner">
+                <div class="sub_main_heading">
+                    <h2>Contact Us</h2>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="./homepage">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="payment">Contact Us</li>
+                    </ol>
+                </nav>
+
+                <div class="contact_detail">
+                    <div class="contact_detail_left">
+
+                        <h5>
+                            <h4 class="address">Address </h4>
+                            <span>PO Box 16122 Collins Street West</span>
+                            <span>Victoria 8007 Australia <b>-Map</b></span>
+                        </h5>
+
+                    </div>
+                    <div class="contact_detail_right">
+
+                        <h5>
+                            <h4>Contact Info</h4><span>Email: Alíttudios@gmail.com</span> <span class="phone_num">Phone:
+                                +61 383766284</span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="contact_detail_left_map">
+                <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
+                        (dragEnd)="markerDragEnd($event)"></agm-marker>
+                </agm-map>
+            </div>
+            <div class="contact_inner_form">
+                <div class="sub_main_heading">
+                    <h2>Contact Us</h2>
+                </div>
+                <ul class="contact_form">
+
+                    <li>
+                        <mat-form-field [floatLabel]="'never'">
+                            <input matInput type="text" placeholder="Full name" name="name">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field [floatLabel]="'never'">
+                            <input matInput type="text" placeholder="Email Address" name="name">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field [floatLabel]="'never'">
+                            <input matInput type="text" placeholder="Subject" name="name">
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field [floatLabel]="'never'">
+                            <textarea matInput type="text" placeholder="Your messages"></textarea>
+                        </mat-form-field>
+                    </li>
+                    <button>Submit</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>

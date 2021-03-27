@@ -1,0 +1,59 @@
+.orderdetail_form h3 {background:#F7F7F7;font-size:16px;color:#1A1A1A;border-radius:6px;margin-bottom:20px;padding:16px 19px;}
+.orderdetail_form input {color:#848484;font-size:14px;}
+.orderdetail_form input span {color:#1A1824;font-size:14px;}
+.orderdetail_form li {border-bottom:1px solid #7070702e;padding:18px 0 0;}
+.orderdetail_form .payment_last li {padding:18px 0;}
+.form_orderdetail {display:flex;justify-content:space-between;align-items:flex-start;}
+.orderdetail_form {width:66%;}
+ .order_summary {width:30%;background:#F7F7F7;padding:30px 27px;}
+ .half {display:flex;justify-content:space-between;align-items:center;}
+ .half li {width:48%;}
+ .orderdetail_form ul {margin-top:40px;}
+ .orderdetail_form ul:first-child {margin-top:0;}
+ .card_detail {display:flex;justify-content:space-between;flex-direction:row-reverse;align-items:center;    width: 66%;}
+ .card_detail h5 {color:#1A1724;font-size:15px;}
+ .card_detail_inner_left h5 {font-size:16px;font-weight:bold;line-height:25px;}
+ .card_detail_inner_left h5 span {display:block;font-size:14px;color:#1a17247a;font-weight:normal;}
+ .order_summary h3 {color:#1A1A1A;font-weight:600;font-size:20px;}
+ .order_summary h5 {color:#1A1A1A;font-size:16px;font-weight:600;}
+ .order_summary p span {display:block;color:#FF5A61;font-size:16px;font-weight:600;margin:9px 0 5px;}
+ .order_summary p {color:#707070;font-size:14px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+ .inner_summary {display:flex;justify-content:space-between;align-items:flex-start;}
+ .number_detail {background:#fff;width:29%;}
+ .number_detail h5 {color:#1A1A1A;font-size:17px;font-weight:bold;padding:10px 20px;}
+ .ordersummary_inner li {padding:28px 0 0;}
+ .ordersummary_inner ul {border-top:1px solid #0000002e;margin:30px 0;}
+ .summary_result h4 {color:#3E9A00;font-size:15px;margin-bottom:13px;}
+ .summary_result li .result_detail h5 {color:#1a182475;font-size:14px;}
+ .result_detail {display:flex;justify-content:space-between;margin-bottom:10px;}
+ .summary_result li:last-child .result_detail {margin-bottom:0px;}
+ .summary_result li:last-child .result_detail h5 {color:#3E9A00;margin-bottom:13px;font-weight:bold;}
+ .summary_result ul {border-bottom:1px solid #0000002e;border-top:1px solid #0000002e;padding:28px 0 10px;}
+ .orderdetail_form .payment_last {margin-top:70px;}
+ .card_detail .payment_paid h5 {color:#848484;font-size:14px;}
+ .ordersummary_inner {max-height:820px;overflow-x: hidden;overflow-y: auto;}
+ .way_btn_main {display: flex;justify-content: space-between;align-items: flex-start;margin: 0 0 30px;}
+.way_btn_main button {background: #fff;border: none;color: #3E9B00;font-size: 18px;}
+.way_btn {display: flex; border: 2px solid #3E9B00;padding: 7px 19px;border-radius: 6px;justify-content: space-between;align-items: center;}
+.summary_result li:last-child .result_detail .result_detail_left h5 {font-size: 16px;}
+.summary_result li:last-child .result_detail .result_detail_right h5 {font-size: 16px;}
+.green_bg {background: #3E9D00;height: 12px;width: 12px;border-radius: 100px;}
+.text_detaill {
+  
+    overflow: hidden;
+}
+ @media(max-width:1500px) {
+.order_summary h3 {font-size:18px;}
+ .ordersummary_inner ul {margin:25px 0;}
+ .ordersummary_inner li {padding:24px 0 0;}
+ .order_summary h5 {font-size:15px;}
+ .order_summary p span {font-size:13px;}
+ .number_detail h5 {font-size:16px;}
+ .number_detail h5 {padding:9px 17px;}
+ .summary_result h4 {font-size:14px;}
+ .card_detail_inner_left h5 {font-size:15px;}
+ .orderdetail_form .payment_last {margin-top:60px;}
+ .way_btn {padding: 7px 10px;}
+.green_bg {height: 9px;width: 9px;}
+.way_btn_main button {font-size: 16px;}
+ }

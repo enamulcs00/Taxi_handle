@@ -1,0 +1,62 @@
+nav {
+    padding: 15px 0px;
+}
+
+.navbar-nav .dropdown-menu {
+    width: 260px !important;
+    left: unset;
+    right: 0px;
+    border: none;
+    border-radius: 10px 0px 10px 10px;
+    box-shadow: 0 0 10px #0000001f;
+}
+
+.dropdown-item {
+    padding: 5px 20px;
+    &:hover {
+        background: #ffd4d6;
+    }
+    &:active {
+        color: #fff;
+        background-color: #FF5A61;
+    }
+}
+
+.error
+{
+    color: red;
+}
+
+
+.profile_head {
+    .btn{
+        position: relative;
+        border-radius: 0;
+        color: #fff;
+        background: none;
+        border: none;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .header-btns-icon {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        color: #30323A;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    span {
+        color: #FF5A61;
+        font-size: 13px;
+        font-weight: 700;
+        margin-left: 6px;
+        cursor: pointer;
+    
+    }
+}
+

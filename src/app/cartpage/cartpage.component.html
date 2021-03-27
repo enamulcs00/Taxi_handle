@@ -1,0 +1,523 @@
+<div class="body_wrapper cart_page">
+    <app-header></app-header>
+    <section class="cart_food_screens all_sec_my">
+        <div class="conta_iner">
+            <div class="food_screen_inner">
+                <div class="food_big_screen">
+                    <figure>
+                        <img src="../../../assets/images/cartpage/food_big.png" alt="">
+                    </figure>
+                    <div class="hm_restur_rateing">
+                        <figure>
+                            <img src="../../../assets/images/homepage/rateing.png" alt="">
+                        </figure>
+                        <span>4.8</span>
+                    </div>
+
+                </div>
+                <div class="food_screen_popup">
+                    <ul>
+                        <li>
+                            <figure><img src="../../assets/images/homepage/foodimg.jpg"></figure>
+                        </li>
+                        <li>
+                            <figure><img src="../../assets/images/homepage/foodimg.jpg"></figure>
+                            <div class="img_popup_overlay">
+                        <li>
+                            <button mat-raised-button (click)="openDialog()">+10</button>
+                        </li>
+                </div>
+                </li>
+
+                </ul>
+                <ul class="cartpage_map">
+                    <li class="outlet_top">
+                        <div class="maps_sec cartpage">
+                            <agm-map [latitude]="lat" [longitude]="lng">
+                                <agm-direction [origin]="origin" [destination]="destination">
+                                </agm-direction>
+                            </agm-map>
+                        </div>
+                    </li>
+                    <li class="outlet">
+                        <div>
+                            <h4>See all 7 outlets in chandigarh</h4>
+                        </div>
+                        <div>
+                            <figure><img src="../../assets/images/right.png"></figure>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+</div>
+</section>
+<!-------start menu in cart restaurent-->
+<section class="cart_food_menu all_sec">
+    <div class="conta_iner">
+        <div class="cart_restaurent_title">
+            <h2>Rosa Cafe</h2>
+            <P>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the
+                stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of
+                the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float.
+                Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the
+                stars had ceased to twinkle. By the same illusion</P>
+        </div>
+        <!--------------start cart menu item-->
+        <div class="food_cartmenu_section">
+            <div class="food_cart_menuitems">
+                <div class="food_cart_menutitle">
+                    <h3>menu</h3>
+                </div>
+                <div class="food_cart_menutabs">
+                    <mat-tab-group>
+                        <mat-tab label="Veg">
+
+                            <div class="main_menu_sec">
+                                <ul>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </mat-tab>
+                        <mat-tab label="no Veg">
+                            <div class="main_menu_sec">
+                                <ul>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of Apparently we had reached a great height in the
+                                                        atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon </p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="food_cart_items">
+                                            <div class="cart_food_des">
+                                                <div class="cart_food_img">
+                                                    <figure>
+                                                        <img src="../../../assets/images/cartpage/menu_item.png" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="food_cart_fulldes">
+                                                    <h3>Quattro Formaggi</h3>
+                                                    <h4>KES 8.50</h4>
+                                                    <p>Apparently we had reached a great height in the atmosphere, for
+                                                        the sky was a dead black, and the stars had cease lifts the
+                                                        horizon of</p>
+                                                </div>
+                                            </div>
+                                            <div class="cart_food_add">
+                                                <div class="add_btn_menu">
+                                                    <p>add<span>+</span></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </mat-tab>
+
+                    </mat-tab-group>
+                </div>
+
+            </div>
+            <div class="food_cart_mrnuaside">
+                <div class="food_item_cate">
+                    <h3 class="aside_title">Categories</h3>
+                    <ul>
+                        <li class="active">
+                            <h3>Best-sellers</h3>
+                            <p>42</p>
+                        </li>
+                        <li>
+                            <h3>Best-sellers</h3>
+                            <p>42</p>
+                        </li>
+                        <li>
+                            <h3>Best-sellers</h3>
+                            <p>42</p>
+                        </li>
+                        <li>
+                            <h3>Best-sellers</h3>
+                            <p>42</p>
+                        </li>
+                        <li>
+                            <h3>Best-sellers</h3>
+                            <p>42</p>
+                        </li>
+                        <li>
+                            <h3>Best-sellers</h3>
+                            <p>42</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-----start order bill detail-->
+                <div class="food_order_bill">
+                    <div class="order_topsec">
+                        <h3>Order</h3>
+                        <figure>
+                            <img src="../../../assets/images/cartpage/cart.png" alt="cart">
+                        </figure>
+                    </div>
+                    <div class="order_location_field">
+                        <label>Your address<span>20-30 min</span></label>
+                        <div class="location_order">
+                            <mat-form-field [floatLabel]="'never'">
+                                <input matInput type="text" placeholder="9631 Semper Ave Astoria" name="name">
+                            </mat-form-field>
+                            <span>
+                                <figure>
+                                    <img src="../../../assets/images/cartpage/map.png" alt="map">
+                                </figure>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="order_bill_item">
+                        <ul>
+                            <li>
+                                <div class="order_bill_itembx">
+                                    <div class="order_billadddiv">
+                                        <div class="order_food_name">
+                                            <h3>Quattro Formaggi</h3>
+                                            <p>KES 8.50</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                    <div class="food_order_dis">
+                                        <p>Tomato sauce, mozzarella, romano,</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_bill_itembx">
+                                    <div class="order_billadddiv">
+                                        <div class="order_food_name">
+                                            <h3>Quattro Formaggi</h3>
+                                            <p>KES 8.50</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                    <div class="food_order_dis">
+                                        <p>Tomato sauce, mozzarella, romano,</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="order_bill_itembx">
+                                    <div class="order_billadddiv">
+                                        <div class="order_food_name">
+                                            <h3>Quattro Formaggi</h3>
+                                            <p>KES 8.50</p>
+                                        </div>
+                                        <div class="orderadd_cart_box">
+                                            <a>-</a>
+                                            <p>0</p>
+                                            <a>+</a>
+                                        </div>
+                                    </div>
+                                    <div class="food_order_dis">
+                                        <p>Tomato sauce, mozzarella, romano,</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order_total">
+                        <ul>
+                            <li>
+                                <p>Total</p>
+                                <span>KES 29.05</span>
+                            </li>
+                            <li>
+                                <p>Delivery</p>
+                                <span>KES 0.00</span>
+                            </li>
+                            <li class="total_amount">
+                                <p>Total</p>
+                                <span>KES 29.05</span>
+                            </li>
+                            <li>
+                                <button (click)="goTocart()">Proceed to checkout</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-----end order bill detail-->
+            </div>
+        </div>
+        <!--------------End  cart menu item-->
+    </div>
+</section>
+<app-footer></app-footer>
+</div>

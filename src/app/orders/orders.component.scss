@@ -1,0 +1,12 @@
+.content_inner {display:flex;justify-content:space-between;align-items:center;padding:20px 30px;border-bottom:1px solid #7070701c;}
+.food_img {display:flex;align-items:center;}
+.food_img h4 {color:#1A1A1A;margin-left:33px;font-size:18px;line-height:31px;font-weight:400;}
+.food_img h4 span {color:#FF5A61;display:block;}
+.food_img_inner {height:70px;width:70px;border-radius:8px;overflow:hidden;}
+.content_description {width:50%;}
+.schedule_inner h5 {color:#FF5A61;margin-left:33px;font-size:16px;line-height:31px;font-weight:400;}
+.schedule_inner h5 span {color:#1A1A1A;display:block;}
+.content_schedule {display:flex;}
+@media(max-width:1500px) {.food_img h4 {font-size:16px;line-height:31px;}
+ .schedule_inner h5 {font-size:15px;}
+}

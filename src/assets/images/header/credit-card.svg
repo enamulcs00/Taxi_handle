@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.735" height="12.198" viewBox="0 0 16.735 12.198">
+  <g id="credit-card" transform="translate(-38.632 -91.319)">
+    <g id="Group_2202" data-name="Group 2202" transform="translate(38.632 91.319)">
+      <g id="Group_2199" data-name="Group 2199" transform="translate(0 0)">
+        <g id="Group_2198" data-name="Group 2198">
+          <path id="Path_3082" data-name="Path 3082" d="M158.986,176.681H146.611a2.188,2.188,0,0,0-2.18,2.18V186.7a2.188,2.188,0,0,0,2.18,2.18h12.375a2.188,2.188,0,0,0,2.18-2.18v-7.837A2.182,2.182,0,0,0,158.986,176.681Zm1.007,10.047a.793.793,0,0,1-.791.791H146.587a.793.793,0,0,1-.791-.791v-5.515h14.2Zm0-7.592H145.8v-.3a.793.793,0,0,1,.791-.791H159.2a.793.793,0,0,1,.791.791Z" transform="translate(-144.431 -176.681)" fill="#1a1724"/>
+        </g>
+      </g>
+      <g id="Group_2201" data-name="Group 2201" transform="translate(2.185 7.16)">
+        <path id="Path_3084" data-name="Path 3084" d="M190.345,325.309a1.4,1.4,0,0,0,1.07-.5,1.414,1.414,0,1,0,0-1.837,1.413,1.413,0,1,0-1.07,2.332Z" transform="translate(-188.931 -322.481)" fill="#1a1724"/>
+      </g>
+    </g>
+  </g>
+</svg>

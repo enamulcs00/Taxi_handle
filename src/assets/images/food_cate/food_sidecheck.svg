@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.4" height="15.167" viewBox="0 0 19.4 15.167">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Shape" d="M18.4,2.3,6.133,14.567,0,8.433l2.3-2.3L6.133,9.967,16.1,0Z" transform="translate(0.3 0.6)" fill="#ff8c00"/>
+    </clipPath>
+  </defs>
+  <g id="icons_check" data-name="icons/check" transform="translate(-0.3 0)">
+    <path id="Shape-2" data-name="Shape" d="M18.4,2.3,6.133,14.567,0,8.433l2.3-2.3L6.133,9.967,16.1,0Z" transform="translate(1.3 0)" fill="#3e9900"/>
+  </g>
+</svg>

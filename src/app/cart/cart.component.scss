@@ -1,0 +1,475 @@
+.orderdetail_form h3 {
+    background: #000;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 16px 19px;
+    margin-bottom: 20px;
+}
+
+.orderdetail_form input {
+    color: #848484;
+    font-size: 14px;
+}
+
+.orderdetail_form input span {
+    color: #1A1824;
+    font-size: 14px;
+}
+
+.orderdetail_form li {
+    // border-bottom: 1px solid #7070702e;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderdetail_form .payment_last li {
+    padding: 18px 0;
+    height: auto;
+}
+
+.form_orderdetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.orderdetail_form {
+    width: 66%;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            width: 49%;
+            position: relative;
+            input {
+                padding: 10px;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #999;
+            }
+        }
+        .li2 {
+            width: 100%;
+        }
+    }
+    .select_slot {
+        padding: 20px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            width: 100%;
+        }
+        li {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #d8d8d8;
+            background: #fff;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            p {
+                color: #E5E5E5;
+            }
+        }
+        .active {
+            background: #FF5A61;
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.order_summary {
+    background: #F7F7F7;
+    padding: 30px 27px;
+}
+
+.half li {
+    width: 48%;
+    padding: 0px 10px;
+}
+
+.orderdetail_form ul {
+    margin-top: 40px;
+}
+
+.orderdetail_form ul:first-child {
+    margin-top: 0;
+}
+
+.card_detail {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.card_detail h5 {
+    color: #1A1724;
+    font-size: 15px;
+}
+
+.card_detail_inner_left h5 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.card_detail_inner_left h5 span {
+    display: block;
+    font-size: 14px;
+    color: #1a17247a;
+    font-weight: normal;
+}
+
+.order_summary h3 {
+    color: #1A1A1A;
+    font-size: 20px;
+}
+
+.order_summary h5 {
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.order_summary p span {
+    display: block;
+    color: #FF5A61;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 9px 0 5px;
+}
+
+.order_summary p {
+    color: #707070;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.inner_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.number_detail {
+    background: #fff;
+    width: 29%;
+}
+
+.number_detail h5 {
+    color: #1A1A1A;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.ordersummary_inner li {
+    padding: 28px 0 0;
+}
+
+.ordersummary_inner ul {
+    border-top: 1px solid #0000002e;
+    margin: 30px 0;
+}
+
+.summary_result h4 {
+    color: #3E9A00;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+.summary_result li .result_detail h5 {
+    color: #1a182475;
+    font-size: 14px;
+}
+
+.result_detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summary_result li:last-child .result_detail {
+    margin-bottom: 0px;
+}
+
+.summary_result li:last-child .result_detail h5 {
+    color: #3E9A00;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+.summary_result ul {
+    border-bottom: 1px solid #0000002e;
+    border-top: 1px solid #0000002e;
+    padding: 28px 0 10px;
+}
+
+.card_detail .payment_paid h5 {
+    color: #848484;
+    font-size: 14px;
+}
+
+.ordersummary_inner {
+    max-height: 820px;
+    overflow-x: auto;
+}
+
+.payment_last {
+    .pay_type {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: unset;
+        li {
+            position: relative;
+            width: 120px;
+            padding-right: 15px;
+            border: none;
+            .card1 {
+                width: 100%;
+                text-align: center;
+                box-shadow: 0 0 15px #00000017;
+                border-radius: 10px;
+                padding: 15px 20px;
+                background: #F4F4F4;
+            }
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: normal;
+                padding-top: 5px;
+            }
+            .check {
+                display: none;
+            }
+        }
+        .active {
+            .card1 {
+                background: #fff;
+            }
+            svg {
+                fill: #FF5A61;
+            }
+            .check {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                svg {
+                    width: 25px;
+                    background: #fff;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    .pay_Card {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 100%;
+        }
+        .card1 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px #00000017;
+            svg {
+                width: 50px;
+                fill: #fff;
+                stroke: #999;
+            }
+            .card_input {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                h2 {
+                    font-size: 18px;
+                    font-weight: normal;
+                    ul {
+                        display: none;
+                        .expiry {
+                            border-bottom: 1px solid #707070;
+                            width: 110px;
+                            display: inline-block;
+                            margin-right: 30px;
+                            padding: 0px;
+                            input {
+                                width: 100%;
+                                background: none;
+                                border: none;
+                                padding: 10px;
+                            }
+                        }
+                        .cvv {
+                            border-bottom: 1px solid #707070;
+                            width: 110px;
+                            display: inline-block;
+                            padding: 0px;
+                            position: relative;
+                            input {
+                                width: 100%;
+                                background: none;
+                                border: none;
+                                padding: 10px;
+                            }
+                            i {
+                                position: absolute;
+                                bottom: 10px;
+                                right: 10px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .active {
+            .card1 {
+                background: #FFF6F7;
+                svg {
+                    width: 50px;
+                    fill: #FF5A61;
+                    stroke: #fff;
+                }
+                .card_input {
+                    h2 {
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+button.placeorder {
+    margin-top: 30px;
+    background: #FF5A61;
+    border: none;
+    width: 100%;
+    color: #fff;
+    height: 46px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+.order_summary_main {
+    width: 31%;
+    .food_cart_mrnuaside {
+        width: 100%;
+        .order_topsec {
+            padding-bottom: 20px;
+            ul {
+                width: 70%;
+                border: solid #000 1px;
+                border-radius: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    padding: 5px 10px;
+                    text-align: center;
+                }
+                .active {
+                    background: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.number_detail input {
+    box-sizing: border-box;
+    overflow: visible;
+    width: 100%;
+}
+
+.text_detaill {
+    overflow: hidden;
+}
+
+.order_detail_main.cart .summary_result ul {
+    border-top: none;
+}
+
+.promo_code button {
+    background: #4BA100;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 25px;
+    border-radius: 0 12px 12px 0;
+}
+
+.orderdetail_form .card_detailcs h3 {
+    background: none;
+    color: #000;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.promo_code_inner {
+    border-bottom: 1px solid #707070;
+    padding: 13px 25px 13px 0;
+}
+
+.promo_code_inners {
+    width: 41%;
+}
+
+.summary_result li:last-child .result_detail .result_detail_left h5 {
+    font-size: 16px;
+}
+
+.summary_result li:last-child .result_detail .result_detail_right h5 {
+    font-size: 16px;
+}
+
+@media(max-width:1500px) {
+    .orderdetail_form .card_detailcs h3 {
+        font-size: 18px;
+    }
+    button.placeorder {
+        font-size: 15px;
+    }
+    .order_summary h5 {
+        font-size: 15px;
+    }
+    .way_btn {
+        padding: 7px 10px;
+    }
+    .green_bg {
+        height: 9px;
+        width: 9px;
+    }
+    .way_btn_main button {
+        font-size: 16px;
+    }
+}
